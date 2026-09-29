@@ -10,7 +10,7 @@ export default defineConfig({
       // ⚡ The Magic Rule:
       // Any request starting with "/api" is forwarded to port 4000
       "/api": {
-        target: "http://localhost:5000",
+        // target: "http://localhost:5000",
         target: "https://ghartak-hlde.onrender.com"
         changeOrigin: true,
         secure: false,
