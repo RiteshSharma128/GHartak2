@@ -1,0 +1,152 @@
+/* 🟢 Agar yeh alag file hai (App.css) to Tailwind v4 me yeh line zaroori hai */
+@reference "tailwindcss";
+
+/* Smooth Scrollbar (Zepto violet) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #8b5cf6, #6d28d9);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #7c3aed, #5b21b6);
+}
+
+/* Smooth Transitions: sirf interactive elements pe, @layer base me
+   taaki Tailwind ke hover:scale / transition-transform break na ho */
+@layer base {
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    transition-property: color, background-color, border-color, box-shadow, opacity;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* Custom Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(124, 58, 237, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(124, 58, 237, 0); }
+}
+
+/* Blinkit amber ring (badge / highlight ke liye) */
+@keyframes pulse-ring-amber {
+  0% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(251, 191, 36, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0); }
+}
+
+/* 🟢 Yeh animations tumhare components me use ho rahi thi
+   (SellerOrders, AdminOrders, SellerLayout) par defined nahi thi */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes toast-enter {
+  from { opacity: 0; transform: translateX(24px) scale(0.95); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+@keyframes toast-leave {
+  from { opacity: 1; transform: translateX(0) scale(1); }
+  to { opacity: 0; transform: translateX(24px) scale(0.95); }
+}
+
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-pulse-ring { animation: pulse-ring 2s infinite; }
+.animate-pulse-ring-amber { animation: pulse-ring-amber 2s infinite; }
+.animate-fade-in { animation: fade-in 0.3s ease-out both; }
+.animate-fade-in-up { animation: fade-in-up 0.35s ease-out both; }
+.animate-enter { animation: toast-enter 0.25s ease-out both; }
+.animate-leave { animation: toast-leave 0.2s ease-in both; }
+
+/* 🟢 Scrollbar helpers jo Admin/Super pages me use hue hain
+   (hide-scrollbar, custom-scrollbar) */
+.scrollbar-hide,
+.hide-scrollbar,
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar,
+.hide-scrollbar::-webkit-scrollbar,
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #a78bfa transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #a78bfa;
+}
+
+/* Smooth Page Transitions + reduced motion support */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-float,
+  .animate-pulse-ring,
+  .animate-pulse-ring-amber {
+    animation: none;
+  }
+}
+
+/* Better Focus States for Accessibility (violet) */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #7c3aed;
+  outline-offset: 2px;
+}
+
+/* Text selection Zepto-style */
+::selection {
+  background: #fbbf24; /* Blinkit amber */
+  color: #3b0764;
+}
