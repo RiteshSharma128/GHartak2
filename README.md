@@ -9,7 +9,7 @@ https://ghartak-app.vercel.app
 
 
 <img width="959" height="530" alt="Screenshot 2026-09-27 234546" src="https://github.com/user-attachments/assets/688df856-0892-4966-8c3f-50f55af40d40" />
-<img width="959" height="530" alt="Screenshot 2026-09-27 234546" src="https://github.com/user-attachments/assets/17d6a09a-dcc4-4152-945d-606a2f77f963" />
+
 
 
 
