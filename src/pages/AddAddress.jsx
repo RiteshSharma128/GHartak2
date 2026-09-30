@@ -146,7 +146,7 @@ const AddAddress = () => {
                         
                         {/* Service Area Banner */}
                         <div className="absolute top-0 left-0 right-0 bg-purple-100 text-purple-800 text-[10px] font-black uppercase tracking-widest text-center py-1.5 flex items-center justify-center gap-1.5 z-10">
-                            <AlertCircle size={12}/> Currently serving sonbhadra Only
+                            <AlertCircle size={12}/> Currently serving Sonbhadra Only
                         </div>
                         
                         <div className="mb-6 mt-4">
@@ -201,7 +201,7 @@ const AddAddress = () => {
                             <div className="absolute inset-0 h-full w-full [&>div]:h-full [&>div]:w-full">
                                 <MapPicker 
                                     onSelect={handleMapSelect} 
-                                    defaultAddress={formData.street ? `${formData.street}, Sonbhadra, Utter Pradesh, 231216` : "Sonbhadra, Utter Pradesh, 231216"}
+                                    defaultAddress={formData.street ? `${formData.street}, Sonbhadra, Uttar Pradesh, 231216` : "Sonbhadra, Uttar Pradesh"}
                                 />
                             </div>
                         </div>
