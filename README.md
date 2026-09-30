@@ -5,7 +5,7 @@ Modern grocery delivery platform built with React.js, Vite and Tailwind CSS.
 ## 🚀 Live Demo
 
 Frontend:
-https://ghar-tak2-one.vercel.app/
+https://ghartak-app.vercel.app
 
 [text](GharTakImage)
 
