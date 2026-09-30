@@ -9,9 +9,9 @@ import MapPicker from '../components/MapPicker';
 
 // 🟢 STRICT BUSINESS LOGIC CONSTANTS
 const SERVICE_AREA = {
-    city: "Mandvi",
-    state: "Gujarat",
-    zipcode: "394160",
+    city: "Sonbhadra",
+    state: "Uttar Pradesh",
+    zipcode: "231216",
     country: "India"
 };
 
