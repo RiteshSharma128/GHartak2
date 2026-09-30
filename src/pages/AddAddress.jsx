@@ -201,7 +201,7 @@ const AddAddress = () => {
                             <div className="absolute inset-0 h-full w-full [&>div]:h-full [&>div]:w-full">
                                 <MapPicker 
                                     onSelect={handleMapSelect} 
-                                    defaultAddress={formData.street ? `${formData.street}, Sonbhadra, Uttar Pradesh, 231216` : "Sonbhadra, Uttar Pradesh,231216"}
+                                    defaultAddress={formData.street ? `${formData.street}, Sonbhadra, Uttar Pradesh, 231216` : "Sonbhadra, Uttar Pradesh, 231216"}
                                 />
                             </div>
                         </div>
