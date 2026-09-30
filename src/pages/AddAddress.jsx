@@ -49,7 +49,7 @@ const AddAddress = () => {
     // 🟢 REAL-TIME MAP SYNC WITH VALIDATION
     const handleMapSelect = (addressData) => {
         if (addressData.zipcode && addressData.zipcode !== SERVICE_AREA.zipcode) {
-            toast.error("Notice: We currently only deliver within Mandvi (394160).", { icon: '📍', duration: 4000 });
+            toast.error("Notice: We currently only deliver within Sonbhadra (231216).", { icon: '📍', duration: 4000 });
         } else {
             toast.success("Street location updated successfully!");
         }
@@ -75,7 +75,7 @@ const AddAddress = () => {
                 if (data?.address) {
                     const detectedZip = data.address.postcode;
                     if (detectedZip && detectedZip !== SERVICE_AREA.zipcode) {
-                        toast.error("Detected location is outside our Mandvi (394160) delivery zone.", { duration: 4000 });
+                        toast.error("Detected location is outside our Sonbhadra (231216) delivery zone.", { duration: 4000 });
                     } else {
                         toast.success("Exact location detected!");
                     }
@@ -146,7 +146,7 @@ const AddAddress = () => {
                         
                         {/* Service Area Banner */}
                         <div className="absolute top-0 left-0 right-0 bg-purple-100 text-purple-800 text-[10px] font-black uppercase tracking-widest text-center py-1.5 flex items-center justify-center gap-1.5 z-10">
-                            <AlertCircle size={12}/> Currently serving Mandvi Only
+                            <AlertCircle size={12}/> Currently serving sonbhadra Only
                         </div>
                         
                         <div className="mb-6 mt-4">
@@ -161,7 +161,7 @@ const AddAddress = () => {
                                 </div>
                             </div>
                             <p className="text-sm text-slate-500 font-medium mt-2 leading-relaxed">
-                                Use the map to drop a pin on your exact building in Mandvi for 10-minute fast delivery.
+                                Use the map to drop a pin on your exact building in Sonbhadra for 10-minute fast delivery.
                             </p>
                         </div>
 
