@@ -37,8 +37,8 @@ https://ghartak-app.vercel.app
 <img width="957" height="533" alt="Screenshot 2026-09-27 235558" src="https://github.com/user-attachments/assets/1b2ce468-dff7-464b-b8fe-74f434cb6ba5" />
 <img width="959" height="535" alt="Screenshot 2026-09-27 235620" src="https://github.com/user-attachments/assets/f7687fed-4534-4ad6-bee6-a5d489aa196e" />
 <img width="959" height="481" alt="Screenshot 2026-09-27 235756" src="https://github.com/user-attachments/assets/a06254c9-83a8-4724-aa75-c59867457d1d" />
-<img width="957" height="480" alt="Screenshot 2026-09-27 235803" src="https://github.com/user-attachments/assets/ab5eb0e4-0d4f-484a-805d-b6fd8e3b2853" />
 
+<img width="959" height="538" alt="Screenshot 2026-09-28 164913" src="https://github.com/user-attachments/assets/3b4439d0-e0fc-4e2a-a218-905c7de5ea11" />
 <img width="959" height="488" alt="Screenshot 2026-09-28 000408" src="https://github.com/user-attachments/assets/45d04430-b194-4e20-9965-a4993c35b219" />
 <img width="959" height="541" alt="Screenshot 2026-09-28 164439" src="https://github.com/user-attachments/assets/ead18f7b-5c40-4566-8f38-2f65aa0a56f8" />
 <img width="959" height="540" alt="Screenshot 2026-09-28 164852" src="https://github.com/user-attachments/assets/cbe1bf27-57dd-49a5-af09-3f5f240e3613" />
